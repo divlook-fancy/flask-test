@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    image: "flask-test"
+    build: .
+    container_name: "flask-test-app"
+    ports:
+      - "5000:5000"
+    volumes:
+      - "./src:/src"
